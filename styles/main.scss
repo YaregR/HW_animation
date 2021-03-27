@@ -1,0 +1,178 @@
+@keyframes ball {
+    0% {
+        left: 0;
+        top: 200px;
+    }
+    10% {
+        left: 100px;
+        top: 125px;
+    }
+    20% {
+        left: 150px;
+        top: 150px;
+    }
+    25% {
+        left: 200px;
+        top: 100px;
+    }
+    30% {
+        left: 250px;
+        top: 125px;
+    }
+    35%{
+        left: 300px;
+        top: 75px;
+    }
+    40% {
+        left: 350px;
+        top: 100px;
+    }
+    45%{
+        left: 400px;
+        top: 50px;
+    }
+    50% {
+        left: 450px;
+        top: 75px;
+    }
+    55% {
+        left: 400px;
+        top: 25px;
+    }
+    60% {
+        left: 350px;
+        top: 75px;
+    }
+    65% {
+        left: 300px;
+        top: 25px;    
+    }
+    70% {
+        left: 250px;
+        top: 75px;
+    }
+    75% {
+        left: 200px;
+        top: 25px;
+    }
+    80% {
+        left: 150px;
+        top: 75px;
+    }
+    85% {
+        left: 100px;
+        top: 25px;
+    }
+    100% {
+        left: 0;
+        top: 200px;
+    }
+
+}
+
+@keyframes block1 {
+    20% {
+        height: 50px;
+        top: 200px;
+    }
+    80% {
+        height: 125px;
+        top: 125px;
+    }
+    100% {
+        height: 50px;
+        top: 200px;
+    }
+}
+
+@keyframes block2 {
+    30% {
+        height: 75px;
+        top: 175px;
+    }
+    70% {
+        height: 125px;
+        top: 125px;
+    }
+    100% {
+        height: 75px;
+        top: 175px;
+    }
+}
+
+@keyframes block3 {
+    40% {
+        height: 100px;
+        top: 150px;
+    }
+    60% {
+        height: 125px;
+        top: 125px;
+    }
+    100% {
+        height: 100px;
+        top: 150px;
+    }
+}
+
+
+.container {
+    margin: 0 auto;
+    width: 650px;
+    height: 250px;
+    border: 1px solid #000;
+    position: relative;
+
+    .ball {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
+        top: 200px;
+        left: 0px;
+        background-color: forestgreen;
+        animation-name: ball;
+        animation-duration: 10s;
+        animation-timing-function:ease;
+        animation-iteration-count:infinite;
+    }
+    .block1 {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        top: 200px;
+        left: 150px;
+        background-color:blue;
+        animation-name: block1;
+        animation-duration: 10s;
+        animation-timing-function:ease;
+        animation-iteration-count:infinite;
+    }
+    .block2 {
+        position: absolute;
+        width: 50px;
+        height: 75px;
+        top: 175px;
+        left: 250px;
+        background-color:blue;
+        animation: block2 10s ease infinite;
+    }
+    .block3 {
+        position: absolute;
+        width: 50px;
+        height: 100px;
+        top: 150px;
+        left: 350px;
+        background-color:blue;
+        animation: block3 10s ease infinite;
+    }
+    .block4 {
+        position: absolute;
+        width: 50px;
+        height: 125px;
+        top: 125px;
+        left: 450px;
+        background-color:blue;
+    }
+}
+
